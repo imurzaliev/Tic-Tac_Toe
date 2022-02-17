@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700;900&display=swap");
 
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif, "Times New Roman", Times, serif;
@@ -9,6 +9,13 @@ body {
 
 header {
   padding: 0.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 footer {
@@ -22,20 +29,9 @@ a {
   text-decoration: none;
 }
 
-.container {
+.gameboard,
+.grid {
   display: flex;
-  height: 76vh;
-}
-
-.players {
-  width: 40%;
-  text-align: left;
-  padding: 4rem 1.5rem;
-}
-
-.gameboard {
-  display: flex;
-  min-width: 60%;
   justify-content: center;
   align-items: center;
 }
@@ -51,4 +47,5 @@ a {
   border: 1px solid black;
   width: 100px;
   height: 100px;
+  font-size: xx-large;
 }
