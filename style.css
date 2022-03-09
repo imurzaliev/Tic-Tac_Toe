@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  padding: 3rem;
+}
+
 .gameboard,
 .grid {
   display: flex;
@@ -48,4 +52,32 @@ a {
   width: 100px;
   height: 100px;
   font-size: xx-large;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.btns {
+  padding: 0.5rem 3rem;
+  border: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+.form-group {
+  padding: 1rem;
 }
