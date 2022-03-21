@@ -9,36 +9,42 @@
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
-    <!-- <form class="player-info">
-      <h3>Enter Your Names</h3>
-      <div class="form-group">
-        <label for="player1">Player 1 (X)</label>
-        <input
-          type="text"
-          class="form-control"
-          id="player1"
-          placeholder="Name"
-        />
-      </div>
-      <div class="form-group">
-        <label for="player2">Player 2 (O)</label>
-        <input
-          type="text"
-          class="form-control"
-          id="player2"
-          placeholder="Name"
-        />
-      </div>
-      <button class="btns" type="submit">Play</button>
-    </form> -->
-
+    <div id="form">
+      <form class="playerInfo">
+        <h3>Enter Your Names</h3>
+        <div class="formGroup">
+          <label for="player1">Player 1 (X)</label>
+          <input
+            type="text"
+            class="formControl"
+            id="player1"
+            placeholder="Name"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="player2">Player 2 (O)</label>
+          <input
+            type="text"
+            class="formControl"
+            id="player2"
+            placeholder="Name"
+          />
+        </div>
+        <button class="btns" type="submit">Play</button>
+      </form>
+    </div>
+    <div class="results hidden">
+      <div class="gameStatus"><h1></h1></div>
+    </div>
     <header><h1>Tic-Tac-Toe</h1></header>
     <main>
       <div class="container">
         <div class="gameboard">
-          <div class="players hidden">
-            <h2>[X] <span id="playerOne"></span></h2>
-            <h2>[O] <span id="playerTwo"> </span></h2>
+          <div class="statusBar hidden">
+            <h2>
+              <span id="first" class="red">[X]</span>
+              <span id="playerOne"></span>
+            </h2>
           </div>
           <div class="board">
             <div data-index="0" class="grid"></div>
@@ -51,9 +57,19 @@
             <div data-index="7" class="grid"></div>
             <div data-index="8" class="grid"></div>
           </div>
+          <div class="statusBar hidden">
+            <h2>
+              <span id="second" class="">[O]</span>
+              <span id="playerTwo"></span>
+            </h2>
+          </div>
         </div>
       </div>
-      <button id="reset" class="btns">Restart</button>
+
+      <div class="buttons">
+        <button id="reset" class="btns">Restart</button>
+        <button id="newGame" class="btns">New Game</button>
+      </div>
     </main>
     <footer>
       <p>

@@ -40,12 +40,13 @@ a {
   align-items: center;
 }
 
-.players {
+.gameboard {
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.statusBar {
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  width: 70vw;
-  height: 70vh;
 }
 
 #playerOne,
@@ -75,7 +76,12 @@ a {
   display: none;
 }
 
-.player-info {
+.red {
+  color: red;
+}
+
+.playerInfo,
+.gameStatus {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,15 +93,40 @@ a {
   height: 100vh;
 }
 
+input {
+  border: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
 .btns {
   padding: 0.5rem 3rem;
-  border: none;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
   font-size: large;
   font-weight: bold;
   color: white;
   background-color: black;
 }
 
-.form-group {
-  padding: 1rem;
+.btns:hover {
+  background-color: gray;
+}
+
+.formGroup {
+  padding: 0.5rem;
+}
+
+.gameStatus {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons .btns {
+  width: 200px;
 }
